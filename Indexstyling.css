@@ -109,3 +109,16 @@ footer {
     top: 200px;
     color: orangered;
 }
+
+@media screen and (max-width:700px) {
+
+    #ppic {
+        height: 250px;
+        position: fixed;
+        top: 500px;
+        left: 20px;
+        float: right;
+    }
+
+
+}
