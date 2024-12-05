@@ -1,0 +1,111 @@
+body {
+    background-image: url(image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#page2 {
+    background-image: url(backgroun2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    color: tomato;
+    text-align: center;
+}
+
+#pText {
+    border: 4px hsl(0, 80%, 46%) double;
+    width: 230px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    background-color: black;
+    overflow: auto;
+    margin: 10px;
+}
+
+@font-face {
+    font-family: Ifont;
+    src: url(Jaro-Regular.ttf);
+}
+
+#pText>p {
+    color: greenyellow;
+    font-family: Ifont, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#ppic {
+    height: 250px;
+    position: fixed;
+    top: 350px;
+    left: 57.5%;
+    float: right;
+}
+
+a {
+    color: rgb(232, 255, 127);
+    display: block;
+}
+
+a:hover {
+    color: yellow;
+    display: inline;
+    background-color: brown;
+}
+
+.div {
+    color: wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#outerdiv {
+    border: 4px double greenyellow;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    display: flow-root;
+    background-color: rgb(20, 18, 27);
+}
+
+#innerdiv {
+    padding: 10px;
+    border: 2px solid hsl(0, 90%, 60%);
+    width: 50%;
+    float: left;
+    display: flow-root;
+    height: 550px;
+    overflow: auto;
+
+}
+
+#smalltitle {
+    font-size: 24px;
+    font-weight: bolder;
+    color: skyblue;
+    border-top: 4px dashed greenyellow;
+    padding-top: 10px;
+}
+
+li:hover {
+    color: rgb(63, 255, 63);
+
+}
+
+footer {
+    position: relative;
+    top: 200px;
+    color: orangered;
+}
