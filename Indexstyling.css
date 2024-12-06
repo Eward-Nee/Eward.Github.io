@@ -25,14 +25,33 @@ header {
 
 #pText {
     border: 4px hsl(0, 80%, 46%) double;
-    width: 230px;
-    height: auto;
+    width: 30%;
+    height: 40%;
     padding-left: 10px;
     padding-right: 10px;
     float: left;
     background-color: black;
     overflow: auto;
     margin: 10px;
+}
+
+#pText2 {
+    border: 4px hsl(0, 80%, 46%) double;
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: black;
+
+    margin: 10px;
+    transform: translate(0px, 650px);
+    position: relative;
+}
+
+#pText2>p {
+    color: greenyellow;
+    font-family: Ifont, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    transform: translateX(-17%);
 }
 
 @font-face {
@@ -43,13 +62,15 @@ header {
 #pText>p {
     color: greenyellow;
     font-family: Ifont, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
 }
 
 #ppic {
+
     height: 250px;
-    position: fixed;
-    top: 350px;
-    left: 57.5%;
+    left: -27%;
+    top: 230px;
+    position: relative;
     float: right;
 }
 
@@ -91,6 +112,8 @@ a:hover {
 
 }
 
+
+
 #smalltitle {
     font-size: 24px;
     font-weight: bolder;
@@ -102,12 +125,34 @@ a:hover {
 li:hover {
     color: rgb(63, 255, 63);
 
+    animation-name: "glowing";
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
 }
 
-footer {
+#learnmore {
+    animation-name: "scaling";
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#footer2 {
     position: relative;
     top: 200px;
     color: orangered;
+}
+
+#goback {
+    animation-name: "scaling";
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#footer1 {
+    color: orangered;
+    clear: both;
+    transform: translateY(480px);
 }
 
 @media screen and (max-width:700px) {
@@ -115,10 +160,30 @@ footer {
     #ppic {
         height: 250px;
         position: fixed;
-        top: 500px;
-        left: 20px;
+        top: 200px;
+        left: 230px;
         float: right;
     }
 
+    #pText>p {
+        font-size: 15px;
+    }
 
+    #pText2>p {
+        font-size: 16px;
+    }
+
+
+}
+
+@keyframes glowing {
+    50% {
+        text-shadow: 3px 3px 5px gold, -3px -3px 5px gold, -3px 3px 5px gold, 3px -3px 5px gold;
+    }
+}
+
+@keyframes scaling {
+    50% {
+        transform: scale(1.1);
+    }
 }
